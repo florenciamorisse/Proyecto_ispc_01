@@ -1,8 +1,8 @@
 # Proyecto_ispc_01
 
-# Historia y Evolución de los SGBD
+# **Historia y Evolución de los SGBD**
  
-######1.Introducción
+###1.Introducción
  
 Hay dos buenas razones para la siguiente investigación. En primer lugar, el conocer los acontecimientos que dieron lugar al sistema gestor de base de datos nos proporciona cobertura detallada y comprensiva de su origen. En segundo lugar, si en algún momento fuera necesario convertir un sistema de gestión de base de datos, alcanzar cómo trabaja este sistema puede ser una ayuda esencial en el ámbito de los negocios, diseño e implementación de estrategias para la relación cliente/servidor.
  
@@ -14,7 +14,7 @@ Hay programas denominados sistemas gestores de bases de datos, abreviado SGBD (d
 
 
 
-Scrum
+#Scrum
 Es un marco de trabajo a través del cual las personas pueden abordar problemas complejos adaptativos, a la vez que se entregan productos de forma eficiente y creativa con el máximo valor.
 Utiliza procesos interactivos/incrementales.
 
