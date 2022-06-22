@@ -1,6 +1,7 @@
 # Proyecto_ispc_01
 
 # **Historia y Evolución de los SGBD**
+
  
 ### 1.Introducción
  
@@ -9,7 +10,6 @@ Para conocer la historia de la base de datos, debemos empezar por decir que la B
 Hay programas denominados sistemas gestores de bases de datos, abreviado SGBD (del inglés Database Management System o DBMS), que permiten almacenar y posteriormente acceder a los datos de forma rápida y estructurada. Las propiedades de estos DBMS, así como su utilización y administración, se estudian dentro del ámbito de la informática.
 
 ### 2.Orígenes
-
 Los orígenes de las bases de datos se remontan a la Antigüedad donde ya existían bibliotecas y toda clase de registros, su búsqueda era lenta y poco eficaz, el trabajo era manual.
 Posteriormente, el uso de las bases de datos se desarrolló a partir de las necesidades de almacenar grandes cantidades de información o datos. Sobre todo, desde la aparición de las primeras computadoras.
 
