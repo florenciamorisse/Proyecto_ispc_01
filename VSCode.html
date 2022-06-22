@@ -1,0 +1,34 @@
+##**Clonar el repositorio con Visual Studio Code**
+
+Antes de comenzar a clonar el repositorio debemos instalar Visual Studio Code y Git.
+https://code.visualstudio.com/download
+
+Dentro de Git debemos definir nuestro usuario e email de la siguiente manera:
+$ git config --global user.name “tunombre"
+$ git config --global user.email tumail@dominio.com
+
+Ahora vamos a clonar el proyecto creado en Github desde Visual Studio Code. Para ello, nos vamos al menú “view” seleccionamos “command palette”.
+En ese punto buscamos “git: Clone”.
+La herramienta nos pedirá la ruta y ahí es donde tenemos que pegar la URL del repositorio que hemos creado en el punto anterior en Github
+De esta forma ya se ha creado nuestro repositorio y la herramienta nos va marcando los ficheros que vamos modificando.
+Antes de hacer un commit debemos instalar la extensión “GitHub pull request” desde el menú view/terminal.
+
+Además debemos autorizar nuestra cuenta Github en Visual Studio Code. Para ello, vete a la barra inferior de Visual Studio y presiona sobre el icono de Git e introduce tu cuenta de Github.
+Desde la pestaña de Git podemos hacer el “commit” de los ficheros. En primer lugar, incluiremos los ficheros a los que queremos hacer stage pulsando en “+” o “todos”. Además debemos escribir el mensaje del Commit e Intro para terminar.
+Para hacer push de los cambios o pull para copiar los datos de servidor podemos hacerlo de dos maneras:
+•	Podemos pulsar en la parte derecha de la barra de git (icono tres puntos) y elegir la opción push o pull.
+•	Podemos pulsar en la parte inferior sobre sincronizar (en este caso haríamos push y pull).
+
+##**Ver los cambios en Github**
+
+En GitHub dale a “Settings / Source y selecciona “Master Branch”. Visualiza tu web.
+
+La URL de visualización tendrá el siguiente aspecto: https://nombredetucuenta/github.io/nombredeturepositorio/ (La página mostrada es la página index.html).
+
+##Otros errores en la configuración de Github con Visual Studio Code
+
+Error: command ‘git.clone’ not found
+Para solucionar el error command ‘git.clone’ not found debemos instalar GIT e indicar por línea de comandos nuestro usuario e email:
+
+$ git config --global user.name “Nombre"
+$ git config --global user.email tumail@dominio.com
