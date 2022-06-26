@@ -1,6 +1,6 @@
 # Guía de estudio Introducción a las bases de datos
 
- 01.Historia y evolución de los sistemas gestores de los SGBD
+ ## 01.Historia y evolución de los sistemas gestores de los SGBD
 
  # Historia y evolución de los sistemas gestores de los SGBD II
  Gestores de Bases de Datos
