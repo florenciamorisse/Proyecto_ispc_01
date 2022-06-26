@@ -99,9 +99,9 @@ Desnormalización para el rendimiento: A veces los diseñadores de bases de dato
 
  01. Metodología Scrum
 
- # **02.GITHUB-VSC**
+ ## **02.GITHUB-VSC**
 
-##**Clonar el repositorio con Visual Studio Code**
+### **Clonar el repositorio con Visual Studio Code**
 
 Antes de comenzar a clonar el repositorio debemos instalar Visual Studio Code y Git.
 https://code.visualstudio.com/download
@@ -122,13 +122,13 @@ Para hacer push de los cambios o pull para copiar los datos de servidor podemos 
 •	Podemos pulsar en la parte derecha de la barra de git (icono tres puntos) y elegir la opción push o pull.
 •	Podemos pulsar en la parte inferior sobre sincronizar (en este caso haríamos push y pull).
 
-##**Ver los cambios en Github**
+### **Ver los cambios en Github**
 
 En GitHub dale a “Settings / Source y selecciona “Master Branch”. Visualiza tu web.
 
 La URL de visualización tendrá el siguiente aspecto: https://nombredetucuenta/github.io/nombredeturepositorio/ (La página mostrada es la página index.html).
 
-##Otros errores en la configuración de Github con Visual Studio Code
+### Otros errores en la configuración de Github con Visual Studio Code
 
 Error: command ‘git.clone’ not found
 Para solucionar el error command ‘git.clone’ not found debemos instalar GIT e indicar por línea de comandos nuestro usuario e email:
