@@ -32,7 +32,7 @@ Fire Bird
  
  04.Sistemas gestores de Bases de Datos
 
- 05.**Diseño de bases de datos relacionales
+ 05.**Diseño de bases de datos relacionales**
   
 Se estudia un aspecto fundamental de las bases de datos: su diseño. En las bases de datos se ha establecido un ciclo de desarrollo que consta de tres etapas de diseño: **el diseño conceptual,el diseño lógico y el diseño físico**.
 #Etapas de diseño 
