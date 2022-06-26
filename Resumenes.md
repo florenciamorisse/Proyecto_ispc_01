@@ -1,4 +1,4 @@
- Guía de estudio Introducción a las bases de datos
+# Guía de estudio Introducción a las bases de datos
 
  01.Historia y evolución de los sistemas gestores de los SGBD
 
@@ -34,7 +34,7 @@ Fire Bird
 
  05.Diseño de bases de datos relacionales
 
- Guia de estudios de metodologías ágiles y gestión de proyecto
+ # Guia de estudios de metodologías ágiles y gestión de proyecto
 
  01. Metodología Scrum
 
