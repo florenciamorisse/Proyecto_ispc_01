@@ -3,7 +3,11 @@
  ## 01.Historia y evolución de los sistemas gestores de los SGBD
 
  # Historia y evolución de los sistemas gestores de los SGBD II
+ federicoruiz
+ Gestores de Bases de Datos.
+
  Gestores de Bases de Datos
+ main
 Los gestores de bases de datos, Database Management System o DBMS (SGBD) son programas que permiten almacenar y luego acceder a los datos de forma estructurada y rápida.
 Una base de datos es un sistema compuesto por un conjunto de datos, los cuales están almacenados en discos, a los que se accede directamente y un conjunto de programas que regulen o manejen ese conjunto de datos.
 Mientras que un sistema de Gestión de Bases de Datos es un software que sirve de interfaz entre la base de datos, el usuario y las aplicaciones que se utilizan.
