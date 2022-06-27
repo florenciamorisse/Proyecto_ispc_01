@@ -1,5 +1,5 @@
 # Guía de estudio Introducción a las bases de datos
-probando
+
 
 ## 01.Historia y evolución de los sistemas gestores de los SGBD
 ### 1.Introducción
@@ -60,6 +60,62 @@ Fire Bird
 ## 03.Introducción a las bases de datos
  
 ## 04.Sistemas gestores de Bases de Datos
+
+***TIPOS DE SISTEMAS DE INFORMACION***
+
+*Sistemas de información orientados a procesos:*
+  *-Sistemas de gestión de archivos:* Los datos se almacenan en archivos y los programas manejan esos archivos para obtener la información. Si loa estructura de los datos de los archivos cambia, todos los programas que los manejan se deben modificar.
+     Surge así la idea de separar los datos contenidos en los archivos de los programas que los manipulan, que se pueda modificar la estructura de los datos de los archivos sin que por ello se tengan que modificar los programas con los que trabajan.
+    Inconvenientes:
+       -Redundancia e inconsistencia de datos.
+       -Dependencia de los datos física-lógica: la estructura física de los datos se encuentra codificada en los programas de aplicación.
+       -Dificultad para tener acceso a los datos
+       -Separación y aislamiento de los datos.
+       -Dependencia de la estructura del archivo con el lenguaje de programación.
+       -Problema en la seguridad y la integridad de los datos
+
+*Sistemas de información orientados a los datos. Bases de datos:*
+
+En este tipo de sistemas los datos se centralizan en una base de datos común a todas las aplicaciones, los datos también se almacenan en una única estructura lógica
+Metadatos son datos que describen otros datos.
+
+***ARQUITECTURA DE LOS SGBD***
+
+En estos sistemas se proporciona un conjunto coordinado de programas, procedimientos y lenguajes 
+ Las herramientas que se proporcionan a los usuarios para: administrar y crear la estructura física, la manipulación de datos, recuperación, creación de copias de seguridad, gestión de la comunicación, creación de aplicaciones, de instalación, y la exportación e importación de datos.
+
+
+
+Niveles de abstracción de una Base de Datos:
+ **Nivel externo:** visión de datos que poseen los usuarios del SI. 
+ **Nivel físico:** es la forma que están almacenados; los archivos que contienen la información, su organización, los métodos de acceso a los registros, los tipos de registros, la longitud, los campos que los componen. Esta visión sólo la requiere el administrador/a.
+**Nivel conceptual:** se sitúa entre los dos anteriores, y describe la estructura de toda la BD para un grupo de usuarios mediante un esquema conceptual. Describe las entidades, atributos, relaciones, operaciones de los usuarios y restricciones, ocultando los detalles de las estructuras físicas de almacenamiento.
+
+***3 COMPONENTES DE LOS SGBD***
+
+ **LENGUAJES DE LOS SGBD:** estos van a permitir al administrador de la BD especificar los datos que componen la BD, su estructura, relaciones, reglas de integridad, controles de acceso, características tipo físico y vistas externas de los usuarios.
+ Estos se clasifican en:
+ *-Lenguajes de definición de datos(ddl):*es el que define el esquema conceptual y esquema interno. Es la que permite definir las tres estructuras de la base de datos (interna, conceptual y externa). Trabaja con metadatos. Define las estructuras de datos, las relaciones entre ellos y las reglas a cumplir.
+ *-Lenguaje de manipulación de datos(DML):* se utilizan para leer y actualizar los datos de la BD. Utilizado por usuarios para realizar consultas, inserciones, modificaciones y eliminaciones. Las BD jerárquicas y en red utilizan estos DML procedurales.
+ *-Lenguaje de control de datos(DCL)* permite controlar la seguridad de la base de datos
+
+**No procedurales:** son los lenguajes declarativos. Estos lenguajes permiten especificar los datos a obtener en una consulta, o los datos a modificar, mediante sentencias sencillas (SQL).
+
+ ***3.1 RECURSOS HUMANOS DE LAS BD***
+  se clasifican en:
+  *-INFORMATICOS:* directivos, analistas, administradores, desarrolladores o programadores y equipos de mantenimientos.
+  *-USUARIOS:* expertos, habituales, ocasionales
+    
+
+
+ ***3.2 ESTRUCTURA MULTICAPA***
+ *-Facilidades de usuario:* son las páginas web y aplicaciones con las que los usuarios manejan las BD
+ *-Capa de acceso a datos:* es la que permite comunicar a las aplicaciones de usuario con el diccionario de datos (driver o controlador).
+ *-Diccionario de datos:* es una guía en que la se describe la BD y los objetos que la forman.
+ *-Núcleo:* es la encargada de traducir todas las instrucciones requeridas y prepararlas para si correcta interpretación por parte del sistema
+ *-Sistema operativo:* es la única capa que realmente accede a los datos en sí.
+
+
 
 ## 05.Diseño de bases de datos relacionales
 
