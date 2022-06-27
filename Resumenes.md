@@ -27,7 +27,7 @@ Con todo lo que hemos dicho hasta ahora, podríamos definir el término BD. Una 
 Esta representación informática (o conjunto estructurado de datos) debe poder ser utilizada de forma compartida por muchos usuarios de distintos tipos.
 
 ## 02.Historia y evolución de los sistemas gestores de los SGBD II
- federicoruiz
+
  Gestores de Bases de Datos.
 
  Gestores de Bases de Datos
@@ -59,20 +59,21 @@ Fire Bird
 ## 03.Introducción a las bases de datos
  
 ## 04.Sistemas gestores de Bases de Datos
- FlorenciaMorisse
-## 05.**Diseño de bases de datos relacionales**
 
- 05.**Diseño de bases de datos relacionales**
+## 05.Diseño de bases de datos relacionales
 
-  Existen 2 formas para la contrucción de modelos relacionales:
+Existen 2 formas para la contrucción de modelos relacionales:
 
-    * creando un conjunto de tablas iniciales y aplicando operaciones de normalización hasta conseguir el esquema más óptimo
-    * convertir el modelo ER en tablas, con una depuración lógica y la aplicación de restricciones de integridad
-
+    * Creando un conjunto de tablas iniciales y aplicando operaciones de normalización hasta conseguir el esquema más óptimo.
+    * Convertir el modelo ER en tablas, con una depuración lógica y la aplicación de restricciones de integridad.
   
-Se estudia un aspecto fundamental de las bases de datos: su diseño. En las bases de datos se ha establecido un ciclo de desarrollo que consta de tres etapas de diseño: **el diseño conceptual,el diseño lógico y el diseño físico**.
-#Etapas de diseño 
- La metodología de diseño de bases de datos relacionales se ha consolidado a lo largo de los años satisfaciendo las propiedades de generalidad (independencia de la plataforma hardware/software), calidad del producto (precisión, completitud y eficacia) y facilidad de uso. 
+Se estudia un aspecto fundamental de las bases de datos: su diseño.
+
+    En las bases de datos se ha establecido un ciclo de desarrollo que consta de tres etapas de diseño: **el diseño conceptual,el diseño lógico y el diseño físico**.
+### Etapas de diseño 
+
+    La metodología de diseño de bases de datos relacionales se ha consolidado a lo largo de los años satisfaciendo las propiedades de generalidad (independencia de la plataforma hardware/software), calidad del producto (precisión, completitud y eficacia) y facilidad de uso. 
+    
 **Diseño conceptual**.  Objetivo: definir las entidades y las relaciones entre ellos de forma abstracta. Herramienta: Modelo conceptual de datos. Se usa alguna variante del modelo entidad-relación para las bases de datos relacionales. 
 Resultado: Esquema conceptual de la base de datos. 
 **Diseño lógico**. Objetivo:definir el esquema de la base de datos según el modelo que implementa el SGBD. Herramienta: Modelo lógico de datos. Se usa el modelo lógico que implemente el sistema de gestión de bases de datos objetivo, pero es independiente de los aspectos físicos. Se usan técnicas formales para verificar la calidad del esquema lógico; la más usual es la normalización. Resultado: Esquema lógico de la base de datos. 
