@@ -68,7 +68,8 @@ Existen 2 formas para la contrucción de modelos relacionales:
     * Convertir el modelo ER en tablas, con una depuración lógica y la aplicación de restricciones de integridad.
   
 Se estudia un aspecto fundamental de las bases de datos: su diseño.
-    En las bases de datos se ha establecido un ciclo de desarrollo que consta de tres etapas de diseño: el diseño conceptual,el diseño lógico y el diseño físico.
+
+En las bases de datos se ha establecido un ciclo de desarrollo que consta de tres etapas de diseño: el diseño conceptual,el diseño lógico y el diseño físico.
 #### Etapas de diseño 
     La metodología de diseño de bases de datos relacionales se ha consolidado a lo largo de los años satisfaciendo las propiedades de generalidad (independencia de la plataforma hardware/software), calidad del producto (precisión, completitud y eficacia) y facilidad de uso. 
 
