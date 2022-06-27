@@ -102,7 +102,7 @@ En estos sistemas se proporciona un conjunto coordinado de programas, procedimie
 **No procedurales:** son los lenguajes declarativos. Estos lenguajes permiten especificar los datos a obtener en una consulta, o los datos a modificar, mediante sentencias sencillas (SQL).
 
  ***3.1 RECURSOS HUMANOS DE LAS BD***
-  se clasifican en:
+  se clasifican en: 
   *-INFORMATICOS:* directivos, analistas, administradores, desarrolladores o programadores y equipos de mantenimientos.
   *-USUARIOS:* expertos, habituales, ocasionales
     
