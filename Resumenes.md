@@ -61,6 +61,11 @@ Fire Bird
  04.Sistemas gestores de Bases de Datos
 
  05.**Diseño de bases de datos relacionales**
+
+  Existen 2 formas para la contrucción de modelos relacionales:
+
+    * creando un conjunto de tablas iniciales y aplicando operaciones de normalización hasta conseguir el esquema más óptimo
+    * convertir el modelo ER en tablas, con una depuración lógica y la aplicación de restricciones de integridad
   
 Se estudia un aspecto fundamental de las bases de datos: su diseño. En las bases de datos se ha establecido un ciclo de desarrollo que consta de tres etapas de diseño: **el diseño conceptual,el diseño lógico y el diseño físico**.
 #Etapas de diseño 
