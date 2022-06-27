@@ -97,7 +97,7 @@ Las relaciones también pueden tener atributos.
 
 [![relacionentreentidades.jpg](https://i.postimg.cc/C1VcC7Mj/relacionentreentidades.jpg)](https://postimg.cc/B8M54xK6)
 
-
+.
 
 
 #### 02.Diseño lógico
