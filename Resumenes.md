@@ -68,9 +68,8 @@ Existen 2 formas para la contrucción de modelos relacionales:
     * Convertir el modelo ER en tablas, con una depuración lógica y la aplicación de restricciones de integridad.
   
 Se estudia un aspecto fundamental de las bases de datos: su diseño.
-
-    En las bases de datos se ha establecido un ciclo de desarrollo que consta de tres etapas de diseño: **el diseño conceptual,el diseño lógico y el diseño físico**.
-### Etapas de diseño 
+    En las bases de datos se ha establecido un ciclo de desarrollo que consta de tres etapas de diseño: el diseño conceptual,el diseño lógico y el diseño físico.
+#### Etapas de diseño 
     La metodología de diseño de bases de datos relacionales se ha consolidado a lo largo de los años satisfaciendo las propiedades de generalidad (independencia de la plataforma hardware/software), calidad del producto (precisión, completitud y eficacia) y facilidad de uso. 
 
 #### Diseño conceptual
@@ -80,7 +79,7 @@ Resultado: Esquema conceptual de la base de datos.
 
 #### Diseño lógico
  Objetivo:definir el esquema de la base de datos según el modelo que implementa el SGBD. Herramienta: Modelo lógico de datos. Se usa el modelo lógico que implemente el sistema de gestión de bases de datos objetivo, pero es independiente de los aspectos físicos. Se usan técnicas formales para verificar la calidad del esquema lógico; la más usual es la normalización. Resultado: Esquema lógico de la base de datos. 
- 
+
 **Diseño físico**. Objetivo: definir el esquema físico de la base de datos de forma que se den todas las instrucciones para que un DBA pueda implementar la base de datos sin ninguna ambigüedad.  Herramienta: Modelo físico de datos. Se consideran todos los detalles de la implementación física: organización de archivos e índices para el SGBD considerado. Resultado: Esquema físico de la base de datos. 
 
 __Diseño físico__: El objetivo  es la generación del esquema físico de la base de datos en el modelo de datos que implementa el SGBD. Es decir, la definición de las tablas con sus campos, la imposición de las restricciones de integridad y la definición de índices. Este último  son estructuras de datos implementadas con ficheros que permiten un acceso más eficaz a los datos. Se organizan con respecto a uno o más campos (los denominados campos clave del índice) y guardan sólo la información del valor de la clave y la dirección física a partir de la cual se pueden encontrar registros con ese valor. Los índices son secuencias de registros que tienen dos campos: el valor de la clave y la dirección física del registro del fichero de datos .Los índices permiten disminuir el tiempo de entrada/salida  a disco. Cuando el SGBD necesita buscar un registro según un valor de un campo (por ejemplo, un número de DNI), busca el valor en el índice, consulta la dirección del registro adjunto y a continuación busca en el fichero de datos (donde se almacenan los datos de la tabla correspondiente) el registro. Los índices se organizan como estructuras que permiten localizar el valor en menos tiempo. Si se declara un índice, ese índice se debe mantener actualizado cada vez que la tabla sufra cualquier modificación.  Por otra parte, si hay alternativas, siempre es mejor definir índices para los campos de menor amaño, ya que cuanto más pequeño sea el campo clave, más pequeño será el índice y se necesitarán menos operaciones de lectura del índice.Los índices únicos indican que se aplican sobre campos en los cuales no debe haber elementos repetidos. Todas las claves primarias llevan asociado un índice de forma predeterminada. También se puede indicar que acepten valores nulos o no. Si se aceptan, el índice permitirá esos valores nulos, pero los registros que los contengan no estarán apuntados por el índice. 
