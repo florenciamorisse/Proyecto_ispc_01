@@ -59,8 +59,7 @@ Fire Bird
 ## 03.Introducción a las bases de datos
  
 ## 04.Sistemas gestores de Bases de Datos
-<<<<<<< HEAD
- FlorenciaMorisse
+
  ***TIPOS DE SISTEMAS DE INFORMACION***
 
 <sub>Sistemas de información orientados a procesos:</sub> 
@@ -121,9 +120,6 @@ En estos sistemas se proporciona un conjunto coordinado de programas, procedimie
 ## 05.**Diseño de bases de datos relacionales**
 
  05.**Diseño de bases de datos relacionales**
-=======
->>>>>>> f1ba93fe9bc24fe85a259a8b36094d338bc49389
-
 ## 05.Diseño de bases de datos relacionales
 
 Existen 2 formas para la contrucción de modelos relacionales:
