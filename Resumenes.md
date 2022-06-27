@@ -1,6 +1,6 @@
 # Guía de estudio Introducción a las bases de datos
 
- ## 01.Historia y evolución de los sistemas gestores de los SGBD
+## 01.Historia y evolución de los sistemas gestores de los SGBD
 ### 1.Introducción
  
 Para conocer la historia de la base de datos, debemos empezar por decir que la Base de Datos es un conjunto de información, agrupada o estructurada, que pertenecen a un mismo contexto y, en cuanto a su función, se utiliza para administrar de forma electrónica grandes cantidades de información. Pero engloba mucho más que eso, considerando la gran evolución que ha tenido a lo largo de la historia. En primer lugar, el conocer los acontecimientos que dieron lugar al sistema gestor de base de datos nos proporciona cobertura detallada y comprensiva de su origen. En segundo lugar, si en algún momento fuera necesario convertir un sistema de gestión de base de datos, alcanzar cómo trabaja este sistema puede ser una ayuda esencial en el ámbito de los negocios, diseño e implementación de estrategias para la relación cliente/servidor.
@@ -26,7 +26,7 @@ En otras palabras, una base de datos es un conjunto estructurado de datos que re
 Con todo lo que hemos dicho hasta ahora, podríamos definir el término BD. Una base de datos de un SI (Sistema de Información) es la representación integrada de los conjuntos de entidades instancia correspondientes a las diferentes entidades tipo del SI y de sus interrelaciones.
 Esta representación informática (o conjunto estructurado de datos) debe poder ser utilizada de forma compartida por muchos usuarios de distintos tipos.
 
- # Historia y evolución de los sistemas gestores de los SGBD II
+## 02.Historia y evolución de los sistemas gestores de los SGBD II
  federicoruiz
  Gestores de Bases de Datos.
 
@@ -56,9 +56,11 @@ Fire Bird
 
 
 
- 03.Introducción a las bases de datos
+## 03.Introducción a las bases de datos
  
- 04.Sistemas gestores de Bases de Datos
+## 04.Sistemas gestores de Bases de Datos
+ FlorenciaMorisse
+## 05.**Diseño de bases de datos relacionales**
 
  05.**Diseño de bases de datos relacionales**
 
@@ -66,6 +68,7 @@ Fire Bird
 
     * creando un conjunto de tablas iniciales y aplicando operaciones de normalización hasta conseguir el esquema más óptimo
     * convertir el modelo ER en tablas, con una depuración lógica y la aplicación de restricciones de integridad
+
   
 Se estudia un aspecto fundamental de las bases de datos: su diseño. En las bases de datos se ha establecido un ciclo de desarrollo que consta de tres etapas de diseño: **el diseño conceptual,el diseño lógico y el diseño físico**.
 #Etapas de diseño 
