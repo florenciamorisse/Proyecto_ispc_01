@@ -90,7 +90,16 @@ Clave: Valor que identifica unívocamente a cada entidad.
     *superclave: identifica unívocamente a una tupla.
     *clave candidata: Es el menor conjunto que puede formar clave. Puede haber varias en una tabla.
     *clave primaria: es única, toda entidad debe tener la suya. Es la clave candidata que distingue el usuario para identificar unívocamente cada tupla.
-    
+
+Relación: mapeo o cardinalidad. Es una correspondencia entre dos o más entidades. Binarias describe una correspondencia entre dos entidades.Terciarias, entre tres y así sucesivamente.
+Las relaciones también pueden tener atributos.
+¿Cómo se relacionan nuestros atributos?
+
+[![relacionentreentidades.jpg](https://i.postimg.cc/C1VcC7Mj/relacionentreentidades.jpg)](https://postimg.cc/B8M54xK6)
+
+
+
+
 #### 02.Diseño lógico
  Objetivo:definir el esquema de la base de datos según el modelo que implementa el SGBD. Herramienta: Modelo lógico de datos. Se usa el modelo lógico que implemente el sistema de gestión de bases de datos objetivo, pero es independiente de los aspectos físicos. Se usan técnicas formales para verificar la calidad del esquema lógico; la más usual es la normalización. Resultado: Esquema lógico de la base de datos. 
 
