@@ -77,7 +77,12 @@ La metodología de diseño de bases de datos relacionales se ha consolidado a lo
 #### 01.Diseño conceptual
 
 Objetivo: definir las entidades y las relaciones entre ellos de forma abstracta. Herramienta: Modelo conceptual de datos. Se usa alguna variante del modelo entidad-relación para las bases de datos relacionales. 
-Resultado: Esquema conceptual de la base de datos. 
+Resultado: Esquema conceptual de la base de datos. Diagrama Entidad-Relación.
+
+Conceptos:
+
+Entidad: Es el menor objeto con significado en una instancia. Objeto concreto o abstarcto que figura en nuestra BD. (estudiante, cliente, empresa, etc)
+Atributo: Es cada uno de los componentes que determinan una entidad. Pueden ser monovalorados (contienen un valor) o multivalorados (pueden contener más de un valor simultáneamente), tambiém pueden ser simples o compuestos, estos últimos son aquellos que pueden descomponerse en componentes o atributos más pequeños(domicilio, se puede descomponer en calle, número, cp, etc.).
 
 #### Diseño lógico
  Objetivo:definir el esquema de la base de datos según el modelo que implementa el SGBD. Herramienta: Modelo lógico de datos. Se usa el modelo lógico que implemente el sistema de gestión de bases de datos objetivo, pero es independiente de los aspectos físicos. Se usan técnicas formales para verificar la calidad del esquema lógico; la más usual es la normalización. Resultado: Esquema lógico de la base de datos. 
