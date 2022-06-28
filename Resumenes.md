@@ -58,6 +58,9 @@ Fire Bird
 
 
 ## 03.Introducción a las bases de datos
+
+ Las bases de datos son un pilar muy importante para la informatica y su evolucion, apareciendo con el fin  de cubrir la necesidad de procesar y guardar informacion de forma integra y segura. Principalmente en sus comienzos guardando informacion de empresas relacionadas al mundo del negocio.
+ Actualmente almacenan y gestionan grandes volumenes de todo tipo de informacion, como tambien accediendo facilmente y rapidamente a la misma y realizar diferentes acciones en ella como insertar, modificar y borrar esos datos. Esto se puede llevar a cabo por un software especifico llamado 'Sistema Gestor de BBDD' que son un conjunto de programas que permiten definir, construir y manipular una base de datos. Otras acciones que se pueden realizar en una base de datos es la recuperacion de datos si se llegan a perder, o recuperarse de algun fallo en si, como tambien acceder de forma remota, exportar o importar datos. Algunas veces se puede relacionar a un SGBD con un sistema operativo, ya que este tambien es un software con conjunto de programas que trabajan integramente y almacenan datos que el usuario provee; o como tambien las bases de datos pueden trabajar aisladamente del sistema operativo y usar este como un intermediario entre el usuario, las aplicaciones y la propia base de datos, esto lo pueden ser los softwares conocidos como 'MySQL', 'Oracle', 'SQL Server', entre otras.
  
 ## 04.Sistemas gestores de Bases de Datos
 
