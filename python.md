@@ -6,3 +6,7 @@ Libro de Python
 
  ## Roadmap - Python.
  Roadmap de python en ingles! [Roadmap-Python](https://data-flair.training/blogs/how-to-become-a-python-developer/)
+
+Libro de Python
+Curso: Python para principiantes. Aut:Eugenia Bahit.
+https://drive.google.com/file/d/1JwoinXUvJ96aM3l8DpwZTwv0jhIPb6bS/view?usp=sharing
