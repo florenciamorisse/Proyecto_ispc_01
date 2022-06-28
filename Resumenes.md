@@ -1,6 +1,7 @@
 # Guía de estudio Introducción a las bases de datos
 
- ## 01.Historia y evolución de los sistemas gestores de los SGBD
+
+## 01.Historia y evolución de los sistemas gestores de los SGBD
 ### 1.Introducción
  
 Para conocer la historia de la base de datos, debemos empezar por decir que la Base de Datos es un conjunto de información, agrupada o estructurada, que pertenecen a un mismo contexto y, en cuanto a su función, se utiliza para administrar de forma electrónica grandes cantidades de información. Pero engloba mucho más que eso, considerando la gran evolución que ha tenido a lo largo de la historia. En primer lugar, el conocer los acontecimientos que dieron lugar al sistema gestor de base de datos nos proporciona cobertura detallada y comprensiva de su origen. En segundo lugar, si en algún momento fuera necesario convertir un sistema de gestión de base de datos, alcanzar cómo trabaja este sistema puede ser una ayuda esencial en el ámbito de los negocios, diseño e implementación de estrategias para la relación cliente/servidor.
@@ -26,8 +27,8 @@ En otras palabras, una base de datos es un conjunto estructurado de datos que re
 Con todo lo que hemos dicho hasta ahora, podríamos definir el término BD. Una base de datos de un SI (Sistema de Información) es la representación integrada de los conjuntos de entidades instancia correspondientes a las diferentes entidades tipo del SI y de sus interrelaciones.
 Esta representación informática (o conjunto estructurado de datos) debe poder ser utilizada de forma compartida por muchos usuarios de distintos tipos.
 
- # Historia y evolución de los sistemas gestores de los SGBD II
- federicoruiz
+## 02.Historia y evolución de los sistemas gestores de los SGBD II
+
  Gestores de Bases de Datos.
 
  Gestores de Bases de Datos
@@ -56,21 +57,113 @@ Fire Bird
 
 
 
- 03.Introducción a las bases de datos
+## 03.Introducción a las bases de datos
  
- 04.Sistemas gestores de Bases de Datos
+## 04.Sistemas gestores de Bases de Datos
 
- 05.**Diseño de bases de datos relacionales**
+***TIPOS DE SISTEMAS DE INFORMACION***
+
+*Sistemas de información orientados a procesos:*
+  *-Sistemas de gestión de archivos:* Los datos se almacenan en archivos y los programas manejan esos archivos para obtener la información. Si loa estructura de los datos de los archivos cambia, todos los programas que los manejan se deben modificar.
+     Surge así la idea de separar los datos contenidos en los archivos de los programas que los manipulan, que se pueda modificar la estructura de los datos de los archivos sin que por ello se tengan que modificar los programas con los que trabajan.
+    Inconvenientes:
+       -Redundancia e inconsistencia de datos.
+       -Dependencia de los datos física-lógica: la estructura física de los datos se encuentra codificada en los programas de aplicación.
+       -Dificultad para tener acceso a los datos
+       -Separación y aislamiento de los datos.
+       -Dependencia de la estructura del archivo con el lenguaje de programación.
+       -Problema en la seguridad y la integridad de los datos
+
+*Sistemas de información orientados a los datos. Bases de datos:*
+
+En este tipo de sistemas los datos se centralizan en una base de datos común a todas las aplicaciones, los datos también se almacenan en una única estructura lógica
+Metadatos son datos que describen otros datos.
+
+***ARQUITECTURA DE LOS SGBD***
+
+En estos sistemas se proporciona un conjunto coordinado de programas, procedimientos y lenguajes 
+ Las herramientas que se proporcionan a los usuarios para: administrar y crear la estructura física, la manipulación de datos, recuperación, creación de copias de seguridad, gestión de la comunicación, creación de aplicaciones, de instalación, y la exportación e importación de datos.
+
+
+
+Niveles de abstracción de una Base de Datos:
+ **Nivel externo:** visión de datos que poseen los usuarios del SI. 
+ **Nivel físico:** es la forma que están almacenados; los archivos que contienen la información, su organización, los métodos de acceso a los registros, los tipos de registros, la longitud, los campos que los componen. Esta visión sólo la requiere el administrador/a.
+**Nivel conceptual:** se sitúa entre los dos anteriores, y describe la estructura de toda la BD para un grupo de usuarios mediante un esquema conceptual. Describe las entidades, atributos, relaciones, operaciones de los usuarios y restricciones, ocultando los detalles de las estructuras físicas de almacenamiento.
+
+***3 COMPONENTES DE LOS SGBD***
+
+ **LENGUAJES DE LOS SGBD:** estos van a permitir al administrador de la BD especificar los datos que componen la BD, su estructura, relaciones, reglas de integridad, controles de acceso, características tipo físico y vistas externas de los usuarios.
+ Estos se clasifican en:
+ *-Lenguajes de definición de datos(ddl):*es el que define el esquema conceptual y esquema interno. Es la que permite definir las tres estructuras de la base de datos (interna, conceptual y externa). Trabaja con metadatos. Define las estructuras de datos, las relaciones entre ellos y las reglas a cumplir.
+ *-Lenguaje de manipulación de datos(DML):* se utilizan para leer y actualizar los datos de la BD. Utilizado por usuarios para realizar consultas, inserciones, modificaciones y eliminaciones. Las BD jerárquicas y en red utilizan estos DML procedurales.
+ *-Lenguaje de control de datos(DCL)* permite controlar la seguridad de la base de datos
+
+**No procedurales:** son los lenguajes declarativos. Estos lenguajes permiten especificar los datos a obtener en una consulta, o los datos a modificar, mediante sentencias sencillas (SQL).
+
+ ***3.1 RECURSOS HUMANOS DE LAS BD***
+  se clasifican en:
+  *-INFORMATICOS:* directivos, analistas, administradores, desarrolladores o programadores y equipos de mantenimientos.
+  *-USUARIOS:* expertos, habituales, ocasionales
+    
+
+
+ ***3.2 ESTRUCTURA MULTICAPA***
+ *-Facilidades de usuario:* son las páginas web y aplicaciones con las que los usuarios manejan las BD
+ *-Capa de acceso a datos:* es la que permite comunicar a las aplicaciones de usuario con el diccionario de datos (driver o controlador).
+ *-Diccionario de datos:* es una guía en que la se describe la BD y los objetos que la forman.
+ *-Núcleo:* es la encargada de traducir todas las instrucciones requeridas y prepararlas para si correcta interpretación por parte del sistema
+ *-Sistema operativo:* es la única capa que realmente accede a los datos en sí.
+
+
+
+## 05.Diseño de bases de datos relacionales
+
+Existen 2 formas para la contrucción de modelos relacionales:
+
+    * Creando un conjunto de tablas iniciales y aplicando operaciones de normalización hasta conseguir el esquema más óptimo.
+    * Convertir el modelo ER en tablas, con una depuración lógica y la aplicación de restricciones de integridad.
   
-Se estudia un aspecto fundamental de las bases de datos: su diseño. En las bases de datos se ha establecido un ciclo de desarrollo que consta de tres etapas de diseño: **el diseño conceptual,el diseño lógico y el diseño físico**.
-#Etapas de diseño 
- La metodología de diseño de bases de datos relacionales se ha consolidado a lo largo de los años satisfaciendo las propiedades de generalidad (independencia de la plataforma hardware/software), calidad del producto (precisión, completitud y eficacia) y facilidad de uso. 
-**Diseño conceptual**.  Objetivo: definir las entidades y las relaciones entre ellos de forma abstracta. Herramienta: Modelo conceptual de datos. Se usa alguna variante del modelo entidad-relación para las bases de datos relacionales. 
-Resultado: Esquema conceptual de la base de datos. 
-**Diseño lógico**. Objetivo:definir el esquema de la base de datos según el modelo que implementa el SGBD. Herramienta: Modelo lógico de datos. Se usa el modelo lógico que implemente el sistema de gestión de bases de datos objetivo, pero es independiente de los aspectos físicos. Se usan técnicas formales para verificar la calidad del esquema lógico; la más usual es la normalización. Resultado: Esquema lógico de la base de datos. 
+Se estudia un aspecto fundamental de las bases de datos: su diseño.
+
+En las bases de datos se ha establecido un ciclo de desarrollo que consta de tres etapas de diseño: el diseño conceptual,el diseño lógico y el diseño físico.
+### Etapas de diseño 
+
+La metodología de diseño de bases de datos relacionales se ha consolidado a lo largo de los años satisfaciendo las propiedades de generalidad (independencia de la plataforma hardware/software), calidad del producto (precisión, completitud y eficacia) y facilidad de uso. 
+
+#### 01.Diseño conceptual
+
+Objetivo: definir las entidades y las relaciones entre ellos de forma abstracta. Herramienta: Modelo conceptual de datos. Se usa alguna variante del modelo entidad-relación para las bases de datos relacionales. 
+Resultado: Esquema conceptual de la base de datos. Diagrama Entidad-Relación.
+
+Conceptos:
+
+Entidad: Es el menor objeto con significado en una instancia. Objeto concreto o abstarcto que figura en nuestra BD. (estudiante, cliente, empresa, etc)
+
+Atributo: Es cada uno de los componentes que determinan una entidad. Pueden ser monovalorados (contienen un valor) o multivalorados (pueden contener más de un valor simultáneamente), tambiém pueden ser simples o compuestos, estos últimos son aquellos que pueden descomponerse en componentes o atributos más pequeños(domicilio, se puede descomponer en calle, número, cp, etc.).
+
+Clave: Valor que identifica unívocamente a cada entidad.   
+
+    *superclave: identifica unívocamente a una tupla.
+    *clave candidata: Es el menor conjunto que puede formar clave. Puede haber varias en una tabla.
+    *clave primaria: es única, toda entidad debe tener la suya. Es la clave candidata que distingue el usuario para identificar unívocamente cada tupla.
+
+Relación: mapeo o cardinalidad. Es una correspondencia entre dos o más entidades. Binarias describe una correspondencia entre dos entidades.Terciarias, entre tres y así sucesivamente.
+Las relaciones también pueden tener atributos.
+¿Cómo se relacionan nuestros atributos?
+
+[![relacionentreentidades.jpg](https://i.postimg.cc/C1VcC7Mj/relacionentreentidades.jpg)](https://postimg.cc/B8M54xK6)
+
+.
+
+
+#### 02.Diseño lógico
+ Objetivo:definir el esquema de la base de datos según el modelo que implementa el SGBD. Herramienta: Modelo lógico de datos. Se usa el modelo lógico que implemente el sistema de gestión de bases de datos objetivo, pero es independiente de los aspectos físicos. Se usan técnicas formales para verificar la calidad del esquema lógico; la más usual es la normalización. Resultado: Esquema lógico de la base de datos. 
+
 **Diseño físico**. Objetivo: definir el esquema físico de la base de datos de forma que se den todas las instrucciones para que un DBA pueda implementar la base de datos sin ninguna ambigüedad.  Herramienta: Modelo físico de datos. Se consideran todos los detalles de la implementación física: organización de archivos e índices para el SGBD considerado. Resultado: Esquema físico de la base de datos. 
 
-__Diseño físico__: El objetivo  es la generación del esquema físico de la base de datos en el modelo de datos que implementa el SGBD. Es decir, la definición de las tablas con sus campos, la imposición de las restricciones de integridad y la definición de índices. Este último  son estructuras de datos implementadas con ficheros que permiten un acceso más eficaz a los datos. Se organizan con respecto a uno o más campos (los denominados campos clave del índice) y guardan sólo la información del valor de la clave y la dirección física a partir de la cual se pueden encontrar registros con ese valor. Los índices son secuencias de registros que tienen dos campos: el valor de la clave y la dirección física del registro del fichero de datos .Los índices permiten disminuir el tiempo de entrada/salida  a disco. Cuando el SGBD necesita buscar un registro según un valor de un campo (por ejemplo, un número de DNI), busca el valor en el índice, consulta la dirección del registro adjunto y a continuación busca en el fichero de datos (donde se almacenan los datos de la tabla correspondiente) el registro. Los índices se organizan como estructuras que permiten localizar el valor en menos tiempo. Si se declara un índice, ese índice se debe mantener actualizado cada vez que la tabla sufra cualquier modificación.  Por otra parte, si hay alternativas, siempre es mejor definir índices para los campos de menor amaño, ya que cuanto más pequeño sea el campo clave, más pequeño será el índice y se necesitarán menos operaciones de lectura del índice.Los índices únicos indican que se aplican sobre campos en los cuales no debe haber elementos repetidos. Todas las claves primarias llevan asociado un índice de forma predeterminada. También se puede indicar que acepten valores nulos o no. Si se aceptan, el índice permitirá esos valores nulos, pero los registros que los contengan no estarán apuntados por el índice. 
+#### 03.Diseño físico
+ El objetivo  es la generación del esquema físico de la base de datos en el modelo de datos que implementa el SGBD. Es decir, la definición de las tablas con sus campos, la imposición de las restricciones de integridad y la definición de índices. Este último  son estructuras de datos implementadas con ficheros que permiten un acceso más eficaz a los datos. Se organizan con respecto a uno o más campos (los denominados campos clave del índice) y guardan sólo la información del valor de la clave y la dirección física a partir de la cual se pueden encontrar registros con ese valor. Los índices son secuencias de registros que tienen dos campos: el valor de la clave y la dirección física del registro del fichero de datos .Los índices permiten disminuir el tiempo de entrada/salida  a disco. Cuando el SGBD necesita buscar un registro según un valor de un campo (por ejemplo, un número de DNI), busca el valor en el índice, consulta la dirección del registro adjunto y a continuación busca en el fichero de datos (donde se almacenan los datos de la tabla correspondiente) el registro. Los índices se organizan como estructuras que permiten localizar el valor en menos tiempo. Si se declara un índice, ese índice se debe mantener actualizado cada vez que la tabla sufra cualquier modificación.  Por otra parte, si hay alternativas, siempre es mejor definir índices para los campos de menor amaño, ya que cuanto más pequeño sea el campo clave, más pequeño será el índice y se necesitarán menos operaciones de lectura del índice.Los índices únicos indican que se aplican sobre campos en los cuales no debe haber elementos repetidos. Todas las claves primarias llevan asociado un índice de forma predeterminada. También se puede indicar que acepten valores nulos o no. Si se aceptan, el índice permitirá esos valores nulos, pero los registros que los contengan no estarán apuntados por el índice. 
  __Restricciones de integridad:__ ayudan a mantener la consistencia semántica de los datos. Además de las restricciones de integridad definidas por las claves, las restricciones de cardinalidad y las de participación total estudiadas anteriormente, se tratan las restricciones de los dominios, la integridad referencial, las dependencias funcionales y las dependencias multivaloradas. Las restricciones de integridad proporcionan un medio de asegurar que las modificaciones hechas a la base de datos por los usuarios autorizados no provoquen la pérdida de la consistencia de los datos. Protegen a la base de datos contra los daños accidentales (no contra daños intencionados, de lo cual se ocupa la seguridad de las bases de datos). Los tipos de restricciones de integridad en una base de datos son: 
 • Claves. 
 • Cardinalidad de la relación.
