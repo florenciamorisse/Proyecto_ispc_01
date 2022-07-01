@@ -156,9 +156,42 @@ Las relaciones también pueden tener atributos.
 
 [![conceptos.jpg](https://i.postimg.cc/T1hGLzK9/conceptos.jpg)](https://postimg.cc/Cny996HB)
 
-¿Cómo se relacionan nuestros atributos?
+¿Cómo se relacionan nuestras entidades?
 
 [![relaciones.jpg](https://i.postimg.cc/sf7W6bx8/relaciones.jpg)](https://postimg.cc/K4c44qnr)
+
+#### Diagrama Entidad-Relación
+
+1. Definimos las entidades
+2. Definimos los atributos y definimoa la clave principal o primaria
+3. Crear las realciones (análisis)
+    (1:N) Cuando existe una realción uno a muchos, la clave primaria que tiene la entidad 1, la paso como foranea a muchos. Pero no puede llamarse igual, entonces le agregamos un número.
+    Una clave foranea siempre representa una clave principal.
+    (N:M) Cuando tengo una relación muchos a muchos, se crea una tabla intermedia con 2 claves foraneas, que son las primarias de las 2 entidades que estoy relacionando.
+
+De un buen diseño depende:
+-Eficiencia, es muy importante cuando se manejan grandes volúmenes de datos.
+-Simplicidad de código, se cometen menos errores.
+-Flexibilidad, que el diagrama sea más fácil de modificar.
+
+#### Elección de lo tipos de entidad y sus atributos
+La principal diferencia es la forma en que se tratan los atributos.	
+¿Qué constituye un atributo o una entidad?
+Depende de la estructura de la empresa que se modela y  de la semántica asociada con el atributo en cuestión.
+#### Elección de los tipo de relación
+Del análisis se desprende la relación entre las entidades.
+#### Restricciones de integridad
+Son propiedades que se asocian a un tipo de entidad o de relación.
+Las restricciones son parte del diseño de la base de datos, al igual que los tipos de entidades o relaciones.
+-Restricción de clave
+Consiste en imponer la clave primaria
+-Restricción de cardinalidad
+-Restricción de participación total
+La relación entre alumno y matrícula nos dice que si hay un alumno dado de alta entonces debe haberse matriculado en una materia.
+
+
+
+
 
 .
 
