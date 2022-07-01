@@ -260,6 +260,31 @@ Las formas normales más habituales, por orden ascendente deexigencia de las pro
 Tercera forma normal : La tercera forma normal se basa en el concepto de dependencia funcional transitiva. Una dependencia funcional X →Y es una dependencia funcional transitiva si existe un conjunto de atributos Z que ni forman clave candidata ni son subconjunto de ninguna clave y además se cumple X → Z y Z →Y . Un esquema está en tercera forma normal si satisface la segunda forma normal y ninguno de los atributos que no forman parte de una clave candidata depende transitivamente de la clave primaria. El procedimiento para normalizar esta relación consiste el descomponerla en los atributos definidos por la dependencia funcional responsable de la transitividad. 
  Forma normal de Boyce-Codd: La forma normal de Boyce-Codd (FNBC) se propuso como una forma más simple que la tercera, pero más estricta porque cada relación en FNBC está en 3FN pero lo contrario no se cumple.  La FNBC evita redundancias que la 3FN no puede. 
 Desnormalización para el rendimiento: A veces los diseñadores de bases de datos escogen un esquema que tiene información redundante; es decir, que no está normalizada. Utilizan la redundancia para mejorar el rendimiento para aplicaciones concretas. El proceso de tomar un esquema normalizado y hacerlo no normalizado se denomina desnormalización, y los diseñadores lo utilizan para ajustar el rendimiento de los sistemas para dar soporte a las operaciones críticas en el tiempo. 
+#### Normativa  de denominación
+La normativa de denominación es una colección de reglas que permite asignar nombres a identificadores y objetos. El objetivo es que los nombres sean lo más claro posible. Cada empresa suele usar una normativa diferente. A veces se tienen manuales de 30 páginas que la describen.
+    Identificadores
+Los identificadores se construyen generalmente con letras y números. Cuando los identificadores tienen más de una palabra hay dos alternativas que se usan habitualmente:
+    -separar cada palabra con un guión bajo, como en nombre_ del_ paciente
+    -separar cada palabra poniendo la primera letra de cada una en mayúsculas, como en NombreDel Paciente
+Algunos SGBD tienen problemas con los espacios en blanco y por eso no se usan habitualmente.
+Incluso tienen problemas con algunos caracteres como las vocales acentuadas y las eñes, por lo que en general se evitan.
+    Tablas
+    Las tablas representan entidades y sus nombres deberían estar en plural porque contienen un conjunto de entidades.
+Algunas tablas, sin embargo, no presentan entidades. 
+Reglas básicas de denominación de tablas:
+-seleccionar nombres de tablas basados en los nombres posibles para las entidades involucradas.
+-usar sustantivos
+-deben tener un sentido intuitivo en la cultura de quienes utilizan la base de datos.
+En las tablas se tiene que denominar a las columnas. El nombre de las columnas debería ser un sustantivo que nombre del elemento que representa, que refleje la forma que los usuarios hablan sobre el elemento.
+Restricciones
+Hay que utilizar una abreviatura de dos letras para identificar la naturaleza de la restricción: 
+-CP (o PK en inglés, primary key) para clave principal
+-IR (o RI en inglés, referential integrity) para integridad referencial
+CO (o CK en inglés, Check) para la comprobación
+-UN para la unicidad
+Después hay que utilizar el nombre de la tabla a la cual se aplica la restricción como segundo elemento del  nombre. Por ejemplo CP_ Médicos
+En el caso de las claves foráneas, donde están involucradas dos tablas, hay que poner el nombre de la segunda tabla como tercer elemento. Por ejemplo IR-Médicos_ Especialidades
+
 
  # Guia de estudios de metodologías ágiles y gestión de proyecto
 
