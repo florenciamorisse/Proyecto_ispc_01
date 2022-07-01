@@ -155,7 +155,7 @@ Relación: mapeo o cardinalidad. Es una correspondencia entre dos o más entidad
 Las relaciones también pueden tener atributos.
 ¿Cómo se relacionan nuestros atributos?
 
-[![relacionentreentidades.jpg](https://i.postimg.cc/C1VcC7Mj/relacionentreentidades.jpg)](https://postimg.cc/B8M54xK6)
+[![relaciones.jpg](https://i.postimg.cc/sf7W6bx8/relaciones.jpg)](https://postimg.cc/K4c44qnr)
 
 .
 
