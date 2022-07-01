@@ -153,6 +153,9 @@ Clave: Valor que identifica unívocamente a cada entidad.
 
 Relación: mapeo o cardinalidad. Es una correspondencia entre dos o más entidades. Binarias describe una correspondencia entre dos entidades.Terciarias, entre tres y así sucesivamente.
 Las relaciones también pueden tener atributos.
+
+[![conceptos.jpg](https://i.postimg.cc/T1hGLzK9/conceptos.jpg)](https://postimg.cc/Cny996HB)
+
 ¿Cómo se relacionan nuestros atributos?
 
 [![relaciones.jpg](https://i.postimg.cc/sf7W6bx8/relaciones.jpg)](https://postimg.cc/K4c44qnr)
