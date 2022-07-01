@@ -288,7 +288,11 @@ En el caso de las claves foráneas, donde están involucradas dos tablas, hay qu
 
  # Guia de estudios de metodologías ágiles y gestión de proyecto
 
- 01. Metodología Scrum
+## 01.Metodología Scrum
+
+Es un marco de trabajo con procesos ágiles, garantizando la entrega de productos en forma eficiente y creativa con el máximo valor.
+
+
 
  ## **02.GITHUB-VSC**
 
@@ -327,8 +331,8 @@ Para solucionar el error command ‘git.clone’ not found debemos instalar GIT 
 $ git config --global user.name “Nombre"
 $ git config --global user.email tumail@dominio.com
 
- 03.GIT Y GITHUB
+## 03.GIT Y GITHUB
  
- 04.GIT
+## 04.GIT
 
 
