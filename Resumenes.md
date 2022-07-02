@@ -372,3 +372,41 @@ El flujo de trabajo básico en Git es algo así:
 ● Confirmas los cambios, lo que toma los archivos tal y como están en el área de  preparación y almacena esa copia instantánea de manera permanente en tu  directorio de Git. 
 Si una versión concreta de un archivo está en el directorio de Git, se considera  confirmada (committed). Si ha sufrido cambios desde que se obtuvo del repositorio,  pero ha sido añadida al área de preparación, está preparada (staged). Y si hay cambios desde que se obtuvo del repositorio, pero no se ha preparado, está  modificada (modified). 
 
+## Comandos basicos de GIT
+
+Lista de algunos de los comandos mas utilizados de GIT.
+
+* **git clone:** Basicamente realiza una copia indentica de la ultima version de un proyecto en un repositorio y lo guarda de forma LOCAL. Ejemplo: **git clone <https://link-con-nombre-del-repositorio>**
+
+* **git branch:** Usando ramas varios desarrolladores pueden trabajar en paralelo en el mismo proyecto simultaneamente. Usando este comando podemos crearlas, listarlas y eliminarlas.
+**Visualizacion de ramas**: 
+```git branch```
+
+```git branch --list```
+
+* **git checkout:** Este comando sirve principalmente para cambiarse de una rama a otra. Tambien la podemos usar para chequear archivos y commits
+```git checkout <nombre-de-la-rama>```
+**Hay tambien un comando de acceso directo que nos permite crear y cambiarse a esa rama al mismo tiempo**
+```git checkout -b <nombre-de-tu-rama>```
+
+* **git status:** El comando git status nos da toda la informacion necesaria sobre la rama actual.
+**Podemos encontrar informacion como**
+1 Si la rama actual esta actualizada.
+1 Si hay algo para confirmar, enviar o recibir (pull)
+1 Si hay archivos en preparacion (staged), sin preparacion (unstaged) o que no estan recibiendo seguimiento (untracked)
+1 Si hay archivos creados, modificados o eliminados.
+
+* **git add:** Cuando creamos, modificamos o eliminamos un archivo, estos cambios suceden en el **local** y no se incluiran en el siguiente commit (a noser que cambiemos la configuracion)
+**IMPORTANTE:** El comando git add no cambia el repositorio y los cambios que no fueron guardados hasta que no utilicemos el comando de confirmacion git commit.
+
+* **git commit:** Este es quizas el comando mas utilizado de Git, una vez que se llega a cierto punto en el desarrollo, queremos guardar nuestros cambios. git commit es como establecer un punto de control en el proceso del desarrollo al cual podemos volver mas tarde si es necesario.
+Tambien necesitamos escribir un mensaje corto para explicar lo que desarrollamos o modificamos en el codigo
+```git commit -m "mensaje de confirmación"```
+**IMPORTANTE** git commit guarda tus cambios unicamente en el local
+
+* **git push:** Despues de haber confirmado nuestros cambios, el siguiente paso es enviar dichos cambios al repositorio remoto. Este comando envia nuestros commits al repositorio remoto.
+**IMPORTANTE** git push solamente carga los cambios que fueron confirmados.
+
+* **git pull:** El comando git pull se utiliza para recibir actualizaciones del repositorio remoto. Este comando es una combinacion del **git fecth** y **git merge** , lo cual significa que que cuando usemos git pull vamos a obtener actualizaciones del repositorio remoto (git fetch) e inmediatamente aplicamos estos ultimos cambios en local (git merge)
+```git pull <nombre-remoto>```
+**Esta operacion puede generar conflictos que tengamos que resolver manualmente**
