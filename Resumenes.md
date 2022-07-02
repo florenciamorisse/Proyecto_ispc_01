@@ -410,3 +410,15 @@ Tambien necesitamos escribir un mensaje corto para explicar lo que desarrollamos
 * **git pull:** El comando git pull se utiliza para recibir actualizaciones del repositorio remoto. Este comando es una combinacion del **git fecth** y **git merge** , lo cual significa que que cuando usemos git pull vamos a obtener actualizaciones del repositorio remoto (git fetch) e inmediatamente aplicamos estos ultimos cambios en local (git merge)
 ```git pull <nombre-remoto>```
 **Esta operacion puede generar conflictos que tengamos que resolver manualmente**
+
+
+## VENTAJAS DEL USO DE GIT 
+
+Sistema destribuido, que permiteel trabajo incluso sin coneccion.
+Super rapido y ligero, optimizado para hacer operaciones de control muy rapidas. 
+Crear ramas y mezclarlas poco propenso a problemas.
+la integridad de la informacion esta asegurada gracias a su modelo de almacenamiento, que permite predecir este tipo de problemas.
+permite flojo de trabajo muy flexibles
+el comcepto de area de preparacion o staging permite versionar los cambios como nos convenga, no todo o nada.
+operaciones locales.
+copias instantaneas. 
