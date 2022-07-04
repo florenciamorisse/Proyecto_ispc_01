@@ -70,12 +70,11 @@ Fire Bird
 
  ***TIPOS DE SISTEMAS DE INFORMACION***
 
- *Sistemas de gestión de archivos* : Los datos se almacenan en archivos y los programas manejan esos archivos para obtener la información. Si loa estructura de los datos de los archivos cambia, todos los programas que los manejan se deben modificar.
  
 *Sistemas de información orientados a procesos:*
-  *-Sistemas de gestión de archivos:* Los datos se almacenan en archivos y los programas manejan esos archivos para obtener la información. Si loa estructura de los datos de los archivos cambia, todos los programas que los manejan se deben modificar.
+  *Sistemas de gestión de archivos:* Los datos se almacenan en archivos y los programas manejan esos archivos para obtener la información. Si loa estructura de los datos de los archivos cambia, todos los programas que los manejan se deben modificar.
 
-     Surge así la idea de separar los datos contenidos en los archivos de los programas que los manipulan, que se pueda modificar la estructura de los datos de los archivos sin que por ello se tengan que modificar los programas con los que trabajan.
+Surge así la idea de separar los datos contenidos en los archivos de los programas que los manipulan, que se pueda modificar la estructura de los datos de los archivos sin que por ello se tengan que modificar los programas con los que trabajan.
     Inconvenientes:
        -Redundancia e inconsistencia de datos.
        -Dependencia de los datos física-lógica: la estructura física de los datos se encuentra codificada en los programas de aplicación.
@@ -84,10 +83,7 @@ Fire Bird
        -Dependencia de la estructura del archivo con el lenguaje de programación.
        -Problema en la seguridad y la integridad de los datos
 
-
 *Sistemas de información orientados a los datos. Bases de datos:*
-
-
 En este tipo de sistemas los datos se centralizan en una base de datos común a todas las aplicaciones, los datos también se almacenan en una única estructura lógica
 Metadatos son datos que describen otros datos.
 
@@ -326,7 +322,26 @@ En el caso de las claves foráneas, donde están involucradas dos tablas, hay qu
 ## 01.Metodología Scrum
 
 Es un marco de trabajo con procesos ágiles, garantizando la entrega de productos en forma eficiente y creativa con el máximo valor.
+*Pilares:*
+**-Transparencia:** aspectos significativos deben ser visibles, definidos en base a un estandar comun
+**-Inspección:** se inspecciona los aarefactos del scrum y la evolucion para detectar variaciones indeseadas
+**-Adaptación:**
 
+**Sprint:** tiempos acotados praa entregar productos funcionando y entregable
+  sprint Goal: objetivo del sprint
+  sprint backlog: que vamos hacer, y un tiempo
+  restropective: como fue el sprint
+
+**ROLES SCRUM:**
+**Product Owner:** responsable de ese producto(miembro interno o externo). Presenta el backlog(lista priorizada de funcionalidades que debe contener un producto, o lista de tareas pendientes o  "artefacto")
+**Developer Team:** equipos multidisciplinarios que pueden trabajar de manera remota.
+**Scrum Master:** facilitador, nexo entre product owner y el developer team, es quien allana el camino de los equipos agil .
+
+**Ceremonias:** reuniones que tienen lugar en las iteraciones o Sprints contemplados dentro de la metodología Scrum, y son una parte importante del progreso de cualquier proyecto.
++-sprint planning meeting:* planificacion del sprint--> el PO presenta el backlog o artefacto y developer team selecciona los items con los que se puede comprometer. Se diseña para alcanzar el objetivo, se crean las tareas, se estima el tiempo.
+*-Daily scrum meeting:* reunion periodicacon un max de 20 min
+*-Sprint Review Meeting:* Debe estar presente el product owner
+*-spring restrospective meeting:* se produce al finalizar el sprint y se documenta que ha funcionado y que no.Participa todo el equipo.
 
 
  ## **02.GITHUB-VSC**
