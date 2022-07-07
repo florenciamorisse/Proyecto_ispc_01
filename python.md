@@ -10,3 +10,4 @@ Libro de Python
 Libro de Python
 Curso: Python para principiantes. Aut:Eugenia Bahit.
 https://drive.google.com/file/d/1JwoinXUvJ96aM3l8DpwZTwv0jhIPb6bS/view?usp=sharing
+https://www.python.org.ar/ (Es una pagina donde obtenes recursos de interés sobre Python, busqueda laboral, empresas que trabajan con Python, un espacio de edición colaborativa de nuestra web, Proyectos de la comunidad:Los proyectos que desarrollamos como grupo o en los que participan nuestros miembros. Etc.
