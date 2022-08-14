@@ -1,6 +1,4 @@
 # Guía de estudio Introducción a las bases de datos
-pobando
-
 
  #Historia y evolución de los sistemas gestores de los SGBD II
 
