@@ -43,10 +43,17 @@ insert into Perro values (02, 'Thor', '2018-05-22', 'M', 42783325);
 insert into Perro values (03, 'Diana', '2021-01-25', 'F', 40586891);
 
 Insert into Historial values (01, '2022-06-06', 03, 'Baño Antipulgas', 2500);
-insert into Historial values
+insert into Historial values (02, '2021-07-28', 01, 'Pedicura', 1000);
+insert into Historial values (03, '2022-02-28', 02, 'Baño Comun', 2000);
 
+-- Punto numero 6 'Perros que asistieron a la peluqueria en 2022'
 
+SELECT * from Historial where Fecha >= '2022-01-01';
 
+-- Punto numero 8 'Nuevo registro en Historial cuyo Perro con ID 10'
+
+Insert into Perro values (10, 'Negro', '2017-07-04', 'M', 42783325);
+Insert into Historial values (04, '2021-12-24', 10, 'Corte y baño comun', 3200);
 
 
 
