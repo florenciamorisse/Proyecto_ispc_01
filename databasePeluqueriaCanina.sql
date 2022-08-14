@@ -66,8 +66,8 @@ where  ID_Perro=30
  insert into Historial value(10,2020/03/12,12,'corte de pelo',2000)
  insert into Historial value(13,2022/03/12,10,'corte de pelo y uñas',2500)
 insert into Historial value(30,2021/12/12,30,'baño, corte y uñas',3000)
-insert into Historial value(01,2021/08/12,'corte de pelo',2000)
-insert into Historial value(06,2022/07/02,'corte de pelo y baño',3000)
+insert into Historial value(01,2021/08/12,01,'corte de pelo',2000)
+insert into Historial value(06,2022/07/02,06,'corte de pelo y baño',3000)
 
  Actualise la fecha del historial de un id especifico 
 update historial
